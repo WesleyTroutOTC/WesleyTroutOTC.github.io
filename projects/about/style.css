@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*  Project: Pretty About You
+    Name: Wesley Trout
+    Date: June 2021
+
+    Filename: style.css */
+	
+html {
+	background-color: #1b85b8;
+}
+	
+body {
+    color: #5a5255;
+    background-color: #559e83;
+    font-family: Tahoma, 'Arial Black', sans-serif;
+}
+
+article#index h1 {
+  color: #5a5255;
+  background-color: #ae5a41;
+}
+
+article#index h2 {
+  color: #5a5255;
+  background-color: #c3cb71;
+}
+
+ul {
+	list-style-type: square;
+}

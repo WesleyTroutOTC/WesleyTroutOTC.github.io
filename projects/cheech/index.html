@@ -1,0 +1,142 @@
+<!doctype html>
+
+<!--
+
+	Wesley Trout
+	July 2021
+	
+	order.html
+-->
+
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Order</title>
+	
+	<style>
+		input[type=submit] {
+		background-color: #fc5454;
+		border: 0.5rem outset pink;
+		border-radius:10px;
+		color: #EFEFEF;
+		padding: 5px 10px;
+		text-decoration: none;
+		font-family: Verdana;
+		font-weight: bold;
+		font-size:2em;
+		font-variant: small-caps;
+		margin: 10px;
+		cursor: pointer;
+		}
+    </style>
+	
+	<link href="styles.css" rel="stylesheet" />
+	<link href="responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		
+		<div class="navbar">
+			<img src="cheech2.png" alt="#" />
+			<h3>Cheech's Pizza</h3>
+		</div>
+		
+		<nav>
+			<ul id="navcontainer">
+				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Order Online</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="#">Our Location</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article>
+		
+		<div class="ordercontainer">
+		
+			<div class="col1">
+			
+				<form id="wholeform">
+					<fieldset id="formcol1">
+					<legend>Your Order</legend>
+						<div class="formRow">
+							<label for="firstname">First Name*</label>
+							<input name="FName" id="firstname" type="text" placeholder="first name" required />
+						</div>
+						
+						<div class="formRow">
+							<label for="lastname">Last Name*</label>
+							<input name="LName" id="lastname" type="text" placeholder="last name" required />
+						</div>
+						
+						<div class="formRow">
+							<label for="phone">Phone Number</label>
+							<input name="cPhone" id="phone" type="tel" placeholder="(###) ###-####"
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+						</div>
+				  
+						<div class="formRow">
+							<label for="pizza">Select Your Pizza</label>
+							<select name="sPizza" id="pizza">
+								<option value="Cheese">Cheese</option>
+								<option value="Pepperoni">Pepperoni </option>
+								<option value="Sausage">Sausage</option>
+								<option value="BBQ Chicken">BBQ Chicken</option>
+								<option value="Hawaiian">Hawaiian</option>
+								<option value="Margherita">Margherita</option>
+							</select>
+						</div>
+				  
+						<div class="formRow">
+							<label for="howmany">How Many Pizzas?</label>
+							<input name="pizzanum" id="howmany" type="number"
+							value="1" step="1" min="1" max="5" />
+						</div>
+				  
+					</fieldset>
+				
+					<div id="buttons">
+						<input type="submit" value="Place Order" />
+					</div>
+					
+				</form>
+			</div>
+		
+			<div class="col2">
+			
+				<div class="sub1">
+					<h4>Critic Review</h4>
+					<p>“They don't skimp on the toppings and their Margherita slice is awesome!” Alex Geno</p>
+					<p>“The slices had a perfect cheese & sauce ratio and I loved how thin and crispy they were.” -Danielle Olsen</p>
+				</div>
+					
+				<div class="sub2">
+					<h4>Customer's Experience</h4>
+					<p>“The homemade pasta and buttery sauce was also incredible, though I didn't taste the sage.” - John Frank</p>
+					<p>“The flavors were definitely unique; the crusts were crispy; the burrata definitely adds a burst of smoky flavor.” - Jucy Dean</p>
+				</div>
+					
+				<div class="sub3">
+					<a href="#"><img src="twit.png" alt="#" /></a>
+					<a href="#"><img src="book.png" alt="#" /></a>
+					<a href="#"><img src="inst.png" alt="#" /></a>
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</article>
+
+	<footer>
+		<p>1302 Pico St. San Fernando, CA 91340 <img src="slice.png" alt="#"/> (818)555-7825 <img src="slice.png" alt="#"/> cheechs@pizza.biz</p>
+	</footer>
+
+</body>
+
+</html>

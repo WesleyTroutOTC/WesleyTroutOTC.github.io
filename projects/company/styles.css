@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/*	Name: Wesley Trout
+		 Date: June 2021
+		 
+		 filename:styles.css
+
+		 */
+
+html {
+  background-color: #353839;
+}
+
+/* Header */
+
+header img#logo {
+	
+	float: none;
+	width: 60%;
+	margin: 20px 20% 0% 20%;
+	padding-bottom: 20px;
+}
+
+/* Nav */
+
+nav {
+	background-color: #232b2b;
+	width: 16%;
+	height: 100%;
+	/* top,right,bottom,left? */
+	margin: -170px 0px 70px 20px;
+	float: left;
+	border-radius: 2em;
+}
+
+nav > ul  {
+	list-style-type: none;
+	margin: 70px 0px 0px -45px
+}	
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	padding-left: 20px;
+}
+
+/* Aside, kind of a mess, will need to have a note somewhere next time on what all 
+	can be put on the same line like font style size weight etc */
+
+body > aside {
+	background-color: #ffbf00;
+	width: 16%;
+	margin: -170px 20px 0px 0px;
+	height: 100%;
+	float:right;
+}
+
+aside img {
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+
+aside {
+	border: 1em solid #a67c00;
+	border-radius: 2em;
+
+}
+
+aside p {
+	font-size: 2em;
+	font-weight:bolder;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #a67c00;
+	text-align: center;
+	background-color: #414a4c;
+	border-top: 10px dashed #ffbf00;
+	border-bottom: 10px dashed #ffbf00;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+aside dd {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight:bolder;
+	text-align: left;
+	font-variant: small-caps;
+	color: #414a4c;
+}
+
+/* h1 */
+
+h1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #232b2b;
+	background-color: #a67c00;
+	text-align: center;
+	padding-top: 0px;
+	padding-left: 0%;
+	max-width:60%;
+	margin: 50px 20% 0% 20%;
+	font-size: 3em;
+	border-top-right-radius: 2em;
+	border-top-left-radius: 2em;
+}
+
+/* P */
+
+article > p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:2em;
+	color: #232b2b;
+	background-color: #414a4c;
+	max-width: 60%;
+	margin: 0% 20% 0% 20%;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+article > p {
+	border-top: 10px dashed #a67c00;
+}
+
+/* Footer */
+
+footer {
+	width: 60%;
+	margin: 40px 20% 0% 20%;
+	text-align: center;
+	font-size: 1.4em;
+	font-variant: small-caps;
+	color: #232b2b;
+	background-color: #a67c00;
+	font-weight: bold;
+	padding-top: 10px;
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+}
+
+
+
+/* Image container for index, had to put in margin, and change the
+	size of the container to make it fit. Changed the text colors/font/variant */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0% 20% 0% 20%;
+  
+}
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+.text {
+  color: #ffbf00;
+  background-color: hsla(191, 7.8%, 27.6%, 0.7);
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Container for products page images. changed the thumbnail size to 15%
+ to make them fit. Was having trouble with the built in text overlay and 
+ close button so i just set the font size to 0*/
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  margin-left:1%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  margin: -550px 20% 0% 20%;
+}
+
+
+/* Expanding image text */
+#imgtext {
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+  color: #353839;
+  font-size: 0px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: relative;
+  top: 10px;
+  right: 15px;
+  color: #353839;
+  font-size: 0px;
+  cursor: pointer;
+}

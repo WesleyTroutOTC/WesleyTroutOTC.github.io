@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+<head>
+	<!-- Name: Wesley Trout
+		 Date: June 2021
+		 
+		 filename: index.html -->
+	
+	<meta charset="utf-8" />
+	
+	<!-- Not sure if i need this viewport line, it was in the example for the expanding images so i threw it in. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Products</title>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<img id="logo" src="mmp_logo.png" alt="Mid Missouri Phone Logo" />
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html"><img src="icon_1.png" alt="" /></a></li>
+			<li><a href="product.html"><img src="icon_2.png" alt="" /></a></li>
+			<!-- placeholder tabs, -->
+			<li><a href="index.html"><img src="test.png" alt="" /></a></li>
+			<li><a href="index.html"><img src="test.png" alt="" /></a></li>
+			<li><a href="index.html"><img src="test.png" alt="" /></a></li>
+		</ul>
+	</nav>
+	<aside>
+		<p>Visit These Local Businesses!</p>
+		
+		<dl>
+			<dt><a href="index.html"><img src="aside_1.jpg" alt="" width=150 /></a></dt>
+			<dd>Joe's Crab Shack</dd>
+			<dt><a href="index.html"><img src="aside_2.jpg" alt="" width=150 /></a></dt>
+			<dd>Jane's Coffe Shop</dd>
+			<dt><a href="index.html"><img src="aside_3.jpg" alt="" width=150 /></a></dt>
+			<dd>Chuck's Deli</dd>
+		</dl>
+	</aside>
+	<article>
+		
+		<!-- same as the slideshow, only had to change img names. -->
+		<!-- The grid: four columns -->
+		
+		<div class="row">
+			
+			<div class="column">
+				<img src="product_1.jpg" alt="OnePlus T3" style="width:100%" onclick="myFunction(this);">
+			</div>
+			
+			<div class="column">
+				<img src="product_2.jpg" alt="ZTE OPEN" style="width:100%" onclick="myFunction(this);">
+			</div>
+			
+			<div class="column">
+				<img src="product_3.jpg" alt="IPhone 4" style="width:100%" onclick="myFunction(this);">
+			</div>
+			
+			<div class="column">
+				<img src="product_4.jpg" alt="Galaxy S3" style="width:100%" onclick="myFunction(this);">
+			</div>
+		</div>
+
+		
+		<!-- The expanding image container -->
+		<div class="container">
+  
+		<!-- Close the image -->
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+		<!-- Expanded image -->
+			<img id="expandedImg" style="width:100%">
+
+		<!-- Image text -->
+			<div id="imgtext"></div>
+		</div> 
+
+
+		<script>
+			function myFunction(imgs) {
+			// Get the expanded image
+			var expandImg = document.getElementById("expandedImg");
+			// Get the image text
+			var imgText = document.getElementById("imgtext");
+			// Use the same src in the expanded image as the image being clicked on from the grid
+			expandImg.src = imgs.src;
+			// Use the value of the alt attribute of the clickable image as text inside the expanded image
+			imgText.innerHTML = imgs.alt;
+			// Show the container element (hidden with CSS)
+			expandImg.parentElement.style.display = "block";
+			} 
+		</script>	
+	
+	
+	<h1>OnePlus T3</h1>
+		<p>"The OnePlus 3T stays true to our Never Settle approach. Impressive specs mean nothing if you 
+		don’t have a great experience every time you pick up your phone. The OnePlus 3T delivers the 
+		best user experience, thanks to the latest hardware upgrades and carefully tested software 
+		nhancements. It was developed with care, craftsmanship and in collaboration with our community."</p>
+	
+		<h1>ZTE OPEN</h1>
+		<p>"Discover the ZTE OPEN: the perfect combination of performance and beauty. 
+		The OPEN is designed with comfort and convenience in mind. 
+		Work quickly and efficiently with the amazing processor and the blazing-fast 4G LTE network. 
+		Finally a smartphone created for your busy lifestyle at an affordable price."</p>
+	</article>
+	<footer>
+		<address>Mid Missouri Phone &#x272F; 1435 Business Ave &#x272F; Springfield MO 65810 &#9743; 417.555.1874</address>
+	</footer>
+</body>
+
+</html>

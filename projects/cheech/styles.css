@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/*
+	Wesley Trout
+	July 2021
+	
+	styles.css
+*/
+
+/* =================================================== */
+
+html {
+	background-color:white;
+}
+
+body {
+	width:90%;
+	background-color:#FFEC7B;
+	height:auto;
+	margin-left:5%;
+	margin-top:-19px;
+	box-shadow: #dfdfdf 15px 0px 25px, 
+				#dfdfdf -15px 0px 25px;
+	
+}
+
+/* ===================== Header ======================= */
+	
+.navbar {
+	height: 100px;
+	background-color:#5fdea7;
+	margin-bottom: 18px;
+}
+
+nav li {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:2em;
+	font-variant: small-caps;
+	padding-top:18px;
+}
+
+.navbar img {
+	
+	width:70px;
+	margin-top:20px;
+	margin-left:40px;
+}
+
+#navcontainer {
+	padding-left: 0px;
+	margin-top:-18px;
+	width:100%;
+	height:75px;
+	background-color: #EFEFEF;
+}
+
+h3 {
+	margin-top: -87px;
+	
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  
+	
+	color:#5fdea7;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:3em;
+	font-variant: small-caps;
+	
+	margin-left:20%;
+	margin-right:25%;
+
+	text-align:center;
+	padding:15px;
+	min-width:430px;
+}
+
+/* ===================== Article ======================== */
+
+h1 {
+	color:#fc5454;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:3em;
+	font-variant: small-caps;
+	
+	border: 5px solid #fefeab;
+	border-radius:20px;
+	
+	margin-left:25%;
+	margin-right:25%;
+	
+	text-align:center;
+	padding:15px;
+	background-color:#EFEFEF;
+}
+
+h2 {
+	color:#fc5454;
+	padding-bottom:5px;
+	margin:0;
+	text-align:center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:2em;
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+
+h4 {
+	color:#fc5454;
+	text-align:center;
+	font-size:2em;
+	margin:0;
+	text-decoration: underline;
+}
+
+#wholeform legend {
+	color:#fc5454;
+	font-size:2em;
+	text-decoration: underline;
+}
+
+.pizzachoice {
+	max-width:350px;
+	background-color: #EFEFEF;
+	border: 0.5rem outset #dfdfdf;
+	border-radius:10px;
+	padding: 5px;
+	margin-bottom:10px;
+}
+
+.pizzachoice img {
+	width:350px;
+}
+
+.pizzachoice p {
+	color:#3f3f3f;
+	font-family: Verdana;
+	font-variant: small-caps;
+	font-weight:bold;
+}
+
+.col1 {
+	background-color: #EFEFEF;
+	
+	border: 0.5rem outset #dfdfdf;
+	border-radius:10px;
+	
+	line-height:3em;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:1em;
+	font-variant: small-caps;
+	margin-left: 20px;
+	margin-right: 20px;
+	flex:1 1 50%;
+}
+
+.col2 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:1em;
+	font-variant: small-caps;
+	margin-right: 20px;
+	flex:1 1 50%;
+}
+
+.sub1, .sub2, .sub3 {
+	background-color: #EFEFEF;
+	border: 0.5rem outset #dfdfdf;
+	border-radius:10px;
+
+	margin-bottom:20px;
+}
+
+.sub3 img {
+	width:80px;
+	padding-left:40px;
+}
+
+/* ======================== Footer ====================================== */
+
+footer {
+	border-top: 5px solid #9fdc9d;
+	background-color: #5fdea7;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size:1.3em;
+	font-variant: small-caps;
+	text-align: center;
+	height:80px;
+	margin-bottom:5px;
+}
+
+footer img {
+	width:25px;
+}
+
+
+
+
+/* =============== Flex Containers / Objects ============================= */
+
+
+#navcontainer {
+	display:flex;
+	flex-wrap: wrap;
+
+}
+
+ nav li {
+	flex: 0 1 auto;
+}
+
+#navli:nth-child(2) {min-width:205px;}
+#navli:nth-child(4) {min-width:195px;}
+
+.ordercontainer {
+	display:flex;
+	justify-content: space-around;
+	align-items:flex-start;
+}
+
+.menucontainer {
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+
+
+/* ================= Hyperlink Styles ============================*/
+
+nav a:link {
+	  padding:10px;
+	  color: #EFEFEF;
+	  background-color: #fc5454;
+	  text-decoration: none;
+	  border: 0.5rem outset pink;
+	  border-radius:10px;
+	}
+
+nav a:visited {
+	  padding:10px;
+	  color: #EFEFEF;
+	  background-color: #fc5454;
+	  text-decoration: none;
+	  border: 0.5rem outset pink;
+	  border-radius:10px;
+	}
+
+nav a:hover {
+	  padding:10px;
+	  color: #EFEFEF;
+	  background-color: #fc5454;
+	  text-decoration: none;
+	  border: 0.5rem outset #fc5454;
+	  border-radius:10px;
+	}
+
+nav a:active {
+	  color: #EFEFEF;
+	  background-color: #fc5454;
+	  text-decoration: none;
+	}
+
+ul {
+	list-style: none;
+}
+
+/* ============================================================== */
